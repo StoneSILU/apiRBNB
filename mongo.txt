@@ -1,0 +1,15 @@
+Mongo DB crée en 2007, 10GEN (solution d'ou sort mongo) open source depuis 2010, base de donnée orientée document, 
+
+Les objets sont stockés en BSON
+Dans mongo : 
+- use dataBaseName pour changer de base de données
+- db.collectionName.insert(data) pour créer un nouveau document
+- db.collectionName.find(data) pour recuperer un document
+-db.collectionName.remove(data) supprimer un ou plusieurs documents si data est vide
+-db.collectionName.update(dataToUpdate, updateParameters, options) 
+	updateParameters : 	{"$set": {}} pour changer, 
+				{"$inc": {]} pour incrementer un compteur
+				{"$unset": {}} supprimer une "clé"
+				{"$rename": {}} renommer une clé
+				{"$set": {key.$}} pour remplacer élément d'une 
+				{"$pop": {}} enlever le dernier / premier element d'un tableau

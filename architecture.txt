@@ -1,0 +1,33 @@
+Architecture projet:
+- app : front
+- models : schemas
+- controllers : fonctions appelés par le routing
+- routes.js
+- server.js
+
+Models:
+
+- User
+	-firstname
+	-lastname
+	-mail
+	-phone
+	-pwd
+- Compte
+	-owner_id
+	-solde
+	-creation_date
+	-iban
+
+- Mouvement
+	-compte_id
+	-date	
+	-montant
+
+-Virement
+	-recipient_iban
+	-sender_id
+	-montant
+	-date
+	-motif
+
